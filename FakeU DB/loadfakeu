@@ -1,0 +1,5 @@
+#!/bin/sh
+FIRST_ARGUMENT="$1"
+
+python loadfakeu.py  $FIRST_ARGUMENT
+

@@ -1,0 +1,7 @@
+Courses(\underline{CID}, \underline{TERM}, SUBJ, CRSE, SEC, UNITS, \underline{SUMMER})\\
+Students(\underline{SID}, SURNAME, PREFNAME, STATUS, EMAIL)\\
+Take(\underline{CID}, \underline{SID}, \underline{TERM}, MAJOR, UNITS, GRADE, SEAT, CLASS, LEVEL, NGRADE, \underline{SUMMER})\\
+Meeting(INSTRUCTORS, \underline{TYPE}, \underline{DAYS}, \underline{TIME}, BUILD, ROOM, \underline{CID},\underline{SUMMER},\underline{TERM})\\
+
+Convert the ER diagram to four relations as above.\\\\ 
+We plan to create four tables in the database. The first one named Courses, includes six attributes--CID, TERM, SUBJ, CRSE, SEC, UNITS, and its key is {CID,TERM,SUMMER}. The second one named Students, includes eight attributes--SID, SURNAME, PREFNAME, LEVEL, CLASS, MAJOR, STATUS, EMAIL, and its key is SID. The third one named Take, and it stores information about which courses are chosen by which student. This table is got for many-many weak relationship Take, and it includes four attributes--CID, SID, UNITS, GRADE, SEAT. Its key is {CID, SID, TERM,SUMMER}. The last one named Meeting, which is a weak entity. It includes nine attributes--INSTRUCTORS, TYPE, DAYS, TIME, BUILD, ROOM, CID, SUMMER, TERM, and its key is {TYPE, DAYS, TIME, CID, SUMMER, TERM}.    
